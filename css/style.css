@@ -1,0 +1,177 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/sourcesanspro-light.eot');
+    src: url('../fonts/sourcesanspro-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-light.woff') format('woff'),
+         url('../fonts/sourcesanspro-light.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light.svg#source_sans_prolight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/sourcesanspro-regular.eot');
+    src: url('../fonts/sourcesanspro-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular.svg#source_sans_proregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+form {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input,
+input:focus,
+button {
+    font-size: 1.125em;
+}
+
+h1,
+input {
+    font-weight: 300;
+}
+
+input:focus{
+    font-weight: 400;
+}
+
+/* General */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+*,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    background: rgba(246,41,12,1);
+    background: -moz-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 50%, rgba(231,56,39,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,41,12,1)), color-stop(50%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+    background: -webkit-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 50%, rgba(231,56,39,1) 100%);
+    background: -o-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 50%, rgba(231,56,39,1) 100%);
+    background: -ms-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 50%, rgba(231,56,39,1) 100%);
+    background: linear-gradient(to bottom, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 50%, rgba(231,56,39,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6290c', endColorstr='#e73827', GradientType=0 );
+}
+
+.login {
+    position: relative;
+    top: 5%;
+    padding: 5% 0;
+    text-align: center;
+}
+
+input,
+button {
+    
+}
+
+h1 {
+    margin-bottom: 5%;
+    color: #FFC3BB;
+    line-height: 1.5;
+}
+
+/* Form */
+
+input,
+button {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 60%;
+    max-width: 250px;
+    border-radius: 3px;
+}
+
+button {
+    border: 0;
+}
+
+input {
+    margin-bottom: 2.5%;
+    background: #F73B22;
+    border: 1px solid #FF7B6A;
+    color: #FFC3BB;
+    text-align: center;
+}
+
+input:hover {
+    background: #FF4E37;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+button,
+input:focus {
+    background: #FFC3BB;
+    color: rgba(246,41,12,1);
+}
+
+/* Placeholders */
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #FFC3BB;
+}
+input:-moz-placeholder {
+    opacity: 1;
+    color: #FFC3BB;
+}
+input::-moz-placeholder {
+    opacity: 1;
+    color: #FFC3BB;
+}
+input:-ms-input-placeholder {
+    opacity: 1;
+    color: #FFC3BB;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+        position: relative;
+        top: 10%;
+        height: 400px;
+    }
+    
+    .login {
+        position: static;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+    }
+    
+    input,
+    button {
+        margin-bottom: 15px;
+    }
+}
